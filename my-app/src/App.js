@@ -1,5 +1,5 @@
 import './App.css';
-import BotArmy from './BotArmy';
+import BotArmy from './components/BotArmy';
 import BotCollection from './components/BotCollection';
 
 function App() {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import BotCollection from './BotCollection';
 
-function BotArmy() {
+function YourBotArmy() {
     const [enlistedBots, setEnlistedBots] = useState([]);
   
     function enlistBot(bot) {
@@ -46,4 +46,5 @@ function BotArmy() {
     );
   }
   
-  export default BotArmy;
+  export default YourBotArmy;
+  
