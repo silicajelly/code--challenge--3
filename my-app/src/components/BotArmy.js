@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import BotCollection from './BotCollection';
 
-function YourBotArmy() {
+function BotArmy() {
     const [enlistedBots, setEnlistedBots] = useState([]);
   
     function enlistBot(bot) {
@@ -11,7 +11,7 @@ function YourBotArmy() {
     }
 
     function releaseBot(bot) {
-        fetch(`http://localhost:3000/bots/${bot.id}`, {
+        fetch(`http://localhost:8001/bots/${bot.id}`, {
              method: 'DELETE',   
         })
         .then(response => {
@@ -46,5 +46,5 @@ function YourBotArmy() {
     );
   }
   
-  export default YourBotArmy;
+  export default BotArmy;
   
